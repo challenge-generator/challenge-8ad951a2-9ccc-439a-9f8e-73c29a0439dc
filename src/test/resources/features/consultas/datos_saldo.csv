@@ -1,0 +1,13 @@
+numerocuenta;tipocuenta;estado;moneda;saldoinicial;tipodocumento;numerodocumento;resultadoesperado;mensajeesperado
+1234567890;Ahorros;Activa;COP;1500000.00;CC;12345678;EXITO;Saldo disponible
+1234567890;Corriente;Activa;COP;500000.00;CC;12345678;EXITO;Saldo disponible
+1234567890;Ahorros;Activa;USD;2500.50;CC;12345678;EXITO;Saldo en dólares
+1234567890;Ahorros;Inactiva;COP;1500000.00;CC;12345678;FALLO;Cuenta inactiva
+1234567890;Corriente;Bloqueada;COP;500000.00;CC;12345678;FALLO;Cuenta bloqueada
+1234567890;Ahorros;Cancelada;COP;0.00;CC;12345678;FALLO;Cuenta cancelada
+0000000000;Ahorros;Activa;COP;1500000.00;CC;12345678;FALLO;Cuenta no encontrada
+1234567890;Ahorros;Activa;EUR;1000.00;CC;12345678;FALLO;Moneda no soportada
+1234567890;Inversión;Activa;COP;3000000.00;CC;12345678;EXITO;Saldo inversión
+1234567890;Ahorros;Activa;COP;-50000.00;CC;12345678;FALLO;Saldo negativo
+9999999999;Corriente;Activa;COP;750000.00;CC;87654321;FALLO;Cuenta no pertenece al usuario
+1234567890;Ahorros;Pendiente;Ahorros;100000.00;CC;12345678;FALLO;Cuenta pendiente de activación

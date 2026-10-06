@@ -1,0 +1,16 @@
+numerocuentaorigen;numerocuentadestino;nombrebeneficiario;tipodocumento;numerodocumento;monto;moneda;concepto;rezon;resultadoesperado
+1234567890;0987654321;Maria Garcia;CC;12345678;50000.00;COP;Pago servicios;Prueba transferencia valida;EXITO
+1234567890;0987654321;Juan Perez;CC;87654321;100000.50;COP;Transferencia ahorros;Transferencia con monto mayor;EXITO
+1234567890;0987654321;Ana Lopez;TI;11223344;25000.00;USD;Pago internacional;Transferencia en dólares;EXITO
+1234567890;5555555555;Carlos Rodriguez;CC;99887766;0.00;COP;Transferencia cero;Monto cero no permitido;FALLO
+1234567890;6666666666;Pedro Gomez;CC;44332211;-5000.00;COP;Monto negativo;Monto negativo no permitido;FALLO
+1234567890;7777777777;Luisa Fernandez;CC;66554433;999999999.99;COP;Monto excede limite;Monto mayor al saldo disponible;FALLO
+0000000000;0987654321;Maria Garcia;CC;12345678;50000.00;COP;Cuenta origen invalida;Cuenta origen no existe;FALLO
+1234567890;0000000000; beneficiario;CC;12345678;50000.00;COP;Beneficiario sin nombre;Nombre de beneficiario requerido;FALLO
+1234567890;0987654321;;CC;12345678;50000.00;COP;Sin nombre beneficiario;Nombre de beneficiario requerido;FALLO
+1234567890;0987654321;Pedro Gomez;XX;44332211;50000.00;COP;Tipo documento invalido;Tipo de documento no valido;FALLO
+1234567890;0987654321;Pedro Gomez;CC;;50000.00;COP;Sin numero documento;Numero de documento requerido;FALLO
+1234567890;0987654321;Pedro Gomez;CC;44332211;50000.00;XXX;Moneda invalida;Moneda no soportada;FALLO
+1234567890;0987654321;Pedro Gomez;CC;44332211;50000.00;;Sin moneda;Moneda requerida;FALLO
+1234567890;0987654321;Pedro Gomez;CC;44332211;50000.00;COP;;Concepto vacio;Concepto requerido;FALLO
+1234567890;0987654321;Pedro Gomez;CC;44332211;50000.00;COP;Transferencia con caracteres especiales <>&;Concepto con caracteres especiales;FALLO
